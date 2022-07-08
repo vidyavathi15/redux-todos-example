@@ -9,6 +9,7 @@ const TodoList = () => {
 
   //Get todoList from todoReducer
   const todoList = useSelector(state => state.todos.todoList);
+  console.log('.....',todoList);
 
   //Use for all the dispatch actions
   const dispatch = useDispatch();
@@ -62,7 +63,7 @@ const TodoList = () => {
         }
        
         <div className="row">
-        <p className="red-text err-msg col s12 center-align">
+        <p className="red-text err-msg col s10 center-align">
         {errMsg}
         </p>
         <div className="input-field col s10">
